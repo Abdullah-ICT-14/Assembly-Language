@@ -1,3 +1,4 @@
+;Taking a number input from user and show it console.
 .model small
 .stack 100h
 .data
@@ -6,10 +7,9 @@ main proc
 
     mov ah,1
     int 21h
-   
-    mov bl,al
+    
     mov ah,2
-    mov dl,bl
+    mov dl,al
     int 21h
 
     mov ah,4ch
